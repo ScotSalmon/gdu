@@ -16,13 +16,15 @@ setup(
     windows=[
         {'script': 'scripts/gdu.py',
          'icon_resources': [(0, 'data/grd.ico')]}
-        ],
+    ],
     package_dir={'': 'lib'},
     packages=['gdulib'],
     data_files=[("", ["data/grd.ico", "data/gdiplus.dll"])],
-    options ={
+    options={
         "py2exe": {
-            "packages": ["reverence"]
-            }
+            "packages": ["reverence"],
+            # This prevents a "DLL load" error
+            "dll_excludes": ["mswsock.dll", "MSWSOCK.dll"]
         }
-    )
+    }
+)

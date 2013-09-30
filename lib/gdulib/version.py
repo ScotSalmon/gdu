@@ -4,9 +4,9 @@ APPURL = "http://gradient.electusmatari.com/uploader/"
 AUTH_TOKEN_URL = "http://gradient.electusmatari.com/uploader/token/"
 
 VENDORNAME = "Gradient"
-COPYRIGHT = "Copyright (C) 2011, 2012 Jorgen Schaefer"
+COPYRIGHT = "Copyright (C) 2011 - 2013 Jorgen Schaefer"
 
-VERSION = 1.1
+VERSION = 1.2
 VERSIONSTRING = "%.1f" % VERSION
 
 DESCRIPTION = """\
